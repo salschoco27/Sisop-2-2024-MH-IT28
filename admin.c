@@ -24,7 +24,7 @@ void log_process(char *username, pid_t pid, char *process_name, int status) {
     sprintf(log_filename, "%s%s", username, LOG_FILE_EXTENSION); // Perbaikan di sini
     log_file = fopen(log_filename, "a");
     if (log_file == NULL) {
- perror("Error opening log file");
+        perror("Error opening log file");
         exit(EXIT_FAILURE);
     }
 
@@ -47,7 +47,7 @@ void monitor_process(char *username) {
     
     char buffer[1024];
     printf("Memantau proses untuk pengguna %s:\n", username);
- while (fgets(buffer, sizeof(buffer), fp) != NULL) {
+    while (fgets(buffer, sizeof(buffer), fp) != NULL) {
     printf("%s", buffer); // Cetak output ke terminal
 
         // Memperoleh PID dan nama proses dari buffer
@@ -72,7 +72,8 @@ void monitor_process(char *username) {
         log_process(username, pid, process_name, status);
         printf("Proses berhasil dicatat ke file log.\n");
     }
- pclose(fp);
+
+    pclose(fp);
 }
 
 void block_processes(char *username) {
@@ -98,7 +99,7 @@ int main(int argc, char *argv[]) {
         printf("-m : Memulai pemantauan proses pengguna\n");
         printf("-s : Menghentikan pemantauan proses pengguna\n");
         printf("-c : Memblokir proses pengguna\n");
- printf("-a : Membuka blokir proses pengguna\n");
+        printf("-a : Membuka blokir proses pengguna\n");
         exit(EXIT_FAILURE);
     }
 
@@ -124,8 +125,9 @@ int main(int argc, char *argv[]) {
         unblock_processes(username);
     } else {
         printf("Opsi tidak valid\n");
- exit(EXIT_FAILURE);
+        exit(EXIT_FAILURE);
     }
 
-    return 0;
+    return 0;
 }
+
