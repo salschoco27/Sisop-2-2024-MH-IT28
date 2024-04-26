@@ -165,14 +165,20 @@ int main(int argc, char *argv[]) {
 **Command untuk menjalankan program**
 1. Membuat folder baru (sisop2), lalu membuat file txt yang berisi text yang sudah diberikan.
 2. Berpindah ke folder yang berisi program virus.c
-3. Menjalankan gcc -o virus virus.c
-4. Menjalankan 
+3. Menjalankan ```gcc -o virus virus.c```
+4. Menjalankan ```./virus.c```
+5. Menjalankan ```./virus.c /home/salsa/sisop2```
+6. Cek apakah file virus.log sudah muncul dengan menjakankan ```ls```
+7. Jika virus.log sudah muncul maka jalankan ```cat virus.log``` untuk menampilkan isi dari file tersebut (harusnya berisi status dari string yang berhasil diubah)
+8. Berpindah ke folder sisop2 lalu jalankan ```cat virus.txt``` (nama file saya).
+
 **Dokumentasi**
 ![image](https://github.com/salschoco27/Sisop-2-2024-MH-IT28/assets/151063684/057ac65b-3bd3-478e-b556-b99b14ea9f9c)
 Error:
 - _PuPuPu_ terulang terus
 - Ketika saya coba 2 code dalam satu file.txt, berhasil merubah MALWARE dan RANSOMWARE
 - Dalam code ini, hanya RANSOMWARE yang terubah.
+- Status yang ada dalam virus.log tidak muncul, status tidak masuk kedalam virus.log
 
 ## Soal 3
 
