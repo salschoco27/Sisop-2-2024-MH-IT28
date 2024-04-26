@@ -162,6 +162,11 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 ```
+**Command untuk menjalankan program**
+1. Membuat folder baru (sisop2), lalu membuat file txt yang berisi text yang sudah diberikan.
+2. Berpindah ke folder yang berisi program virus.c
+3. Menjalankan gcc -o virus virus.c
+4. Menjalankan 
 **Dokumentasi**
 ![image](https://github.com/salschoco27/Sisop-2-2024-MH-IT28/assets/151063684/057ac65b-3bd3-478e-b556-b99b14ea9f9c)
 Error:
