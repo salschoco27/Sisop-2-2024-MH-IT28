@@ -162,6 +162,13 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 ```
+**Dokumentasi**
+![image](https://github.com/salschoco27/Sisop-2-2024-MH-IT28/assets/151063684/057ac65b-3bd3-478e-b556-b99b14ea9f9c)
+Error:
+- _PuPuPu_ terulang terus
+- Ketika saya coba 2 code dalam satu file.txt, berhasil merubah MALWARE dan RANSOMWARE
+- Dalam code ini, hanya RANSOMWARE yang terubah.
+
 ## Soal 3
 
 ### hehe.c
