@@ -21,8 +21,8 @@ Define librarynya masing masing
 #define INTERVAL_SECONDS 15
 #define LOG_FILE "virus.log"
 ```
-hehe
 
+Fungsi untuk replace string bernama str
 ```c
 // untuk replace string
 char *replace_substring(char *str, const char *sub, const char *replace) {
@@ -40,7 +40,10 @@ char *replace_substring(char *str, const char *sub, const char *replace) {
     
     return str;
 }
+```
 
+Fungsi untuk replace suspicious string yang akan di-declare dibawah.
+```c
 //replace string yang sudah ditentukan
 void process_file(const char *path) {
     const char *suspicious_strings[] = {"m4LwAr3", "5pYw4R3", "R4nS0mWaR3"};
@@ -82,7 +85,9 @@ void process_file(const char *path) {
 
     fclose(file);
 }
-
+```
+Untuk menjalankan program pada semua file yang ada dalam satu folder sesuai path yang diinputkan.
+```c
 //menjalankan program di semua file dalam suatu folder
 void process_directory(const char *dir_path) {
     DIR *dir = opendir(dir_path);
@@ -102,7 +107,9 @@ void process_directory(const char *dir_path) {
 
     closedir(dir);
 }
-
+```
+Fungsi Main
+```c
 int main(int argc, char *argv[]) {
 //membuat virus.log
 	FILE  *log_file = fopen(LOG_FILE, "a");
@@ -117,7 +124,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    // Daemonize the process
+    //Implementasi Daemon
     pid_t pid, sid;
     pid = fork();
     if (pid < 0) {
@@ -155,3 +162,6 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 ```
+## Soal 3
+
+### hehe.c
