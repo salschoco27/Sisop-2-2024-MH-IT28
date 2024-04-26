@@ -4,9 +4,11 @@ Kelompok IT 28:
 - Fadlillah Cantika Sari H (5027271042)
 - I Dewa Made Satya Raditya (5027271051)
 ## Soal 1
-### virus.c
-#include <stdio.h>
 
+### virus.c
+Define librarynya masing masing
+```c
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
@@ -18,7 +20,10 @@ Kelompok IT 28:
 
 #define INTERVAL_SECONDS 15
 #define LOG_FILE "virus.log"
+```
+hehe
 
+```c
 // untuk replace string
 char *replace_substring(char *str, const char *sub, const char *replace) {
     char *pos = strstr(str, sub);
@@ -149,3 +154,4 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
+```
