@@ -327,7 +327,7 @@ int main(int argc, char *argv[]) {
    ```
    gcc admin.c -o admin
    ```
-4. Cek apakar file admin.c sudah ada atau belum 
+4. Cek apakah file admin.c sudah ada atau belum 
    ```
    ls admin.c
    ```
@@ -349,7 +349,7 @@ int main(int argc, char *argv[]) {
    ```
    ![WhatsApp Image 2024-04-27 at 17 24 17_8c8f55e8](https://github.com/salschoco27/Sisop-2-2024-MH-IT28/assets/150428950/59e615ef-4a36-42f6-be22-92ae2f74a71d)
 
-   Saat membuka file log tidak keluar hasil program tidak keluar padahal sudah ada perintah agar dijalankan. Seharusnya di file log ini akan keluar format [dd:mm:yyyy]-[hh:mm:ss]_pid-process_nama-process_GAGAL/JALAN
+   Hasilnya pada saat membuka file log tidak keluar hasil program tidak keluar padahal sudah ada perintah agar dijalankan. Seharusnya di file log ini akan keluar format [dd:mm:yyyy]-[hh:mm:ss]_pid-process_nama-process_GAGAL/JALAN
 
 8.  Menggagalkan proses yang dijalankan user setiap detik secara terus menerus
    ```
