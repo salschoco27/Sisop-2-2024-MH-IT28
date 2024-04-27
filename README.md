@@ -359,5 +359,5 @@ Mematikan fitur yang dijalankan secara terus menerus
 ```
 ./admin -a aca
 ```
-Hasilnya semua tab di VM Ware tertutup dan VM Ware keluar (power off). Dalam kondisi ini layar susah untuk di screnshoot karena VM Ware masih harus loading.
+Hasilnya semua tab di VM Ware tertutup dan VM Ware keluar (power off). Dalam kondisi ini layar susah discrenshoot (untuk didokumentasikan) karena VM Ware masih harus loading.
 
