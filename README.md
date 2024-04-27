@@ -484,4 +484,7 @@ void killApps(char *filename) {
    ```
    gcc setup.c -o <nama file yg diinginkan> (untuk saya, saya pakai "output")
    ```
-4. 
+   ![image](https://github.com/salschoco27/Sisop-2-2024-MH-IT28/assets/163504787/14385953-f109-4f8e-bae3-8310f0f8c08a)
+   
+4. uji coba 
+
